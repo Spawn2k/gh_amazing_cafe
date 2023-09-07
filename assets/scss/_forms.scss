@@ -1,0 +1,23 @@
+input {
+  padding: .5rem .8rem;
+  margin-top: 1rem;
+  outline: none;
+  border: 1px solid darken($primary, 5%);
+  &[type="text"] {
+    background-color: lighten($secondary, 25%);
+    &:focus {
+      background-color: lighten($primary, $amount: 25%);
+    }
+  }
+  &[type="submit"] {
+    background-color: $primary;
+    color: $font-color;
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition: $transition;
+    &:hover {
+      background-color: darken($primary, $amount: 5%);
+    }
+  }
+}
+

@@ -1,0 +1,68 @@
+@media screen and (min-width: $break-xlarge) {
+  figure img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  main {
+    min-height: 460px;
+    padding: 5rem 9vw;
+    div.bck {
+      height: 250px;
+    }
+  }
+  aside {
+    flex-wrap: wrap;
+  }
+  figure img {
+  }
+}
+
+@media screen and (max-width: $break-medium) {
+  main {
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  figure {
+    display: flex;
+    justify-content: center;
+    flex-basis: 45%;
+    flex-grow: 1;
+    align-self: center !important;
+  }
+  figcaption {
+    width: 200px;
+    margin: auto;
+  }
+
+  main {
+    margin-bottom: 7rem;
+  }
+}
+
+@media screen and (max-width: $break-xsmall) {
+  figure {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    img {
+      width: 250px;
+    }
+  }
+
+  figcaption {
+    margin: auto;
+    width: 250px;
+  }
+
+  main {
+    height: fit-content;
+    margin-bottom: 0;
+    // padding: 2rem;
+  }
+  aside {
+    padding: 2rem;
+  }
+}

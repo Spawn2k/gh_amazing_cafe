@@ -1,0 +1,41 @@
+main,
+aside {
+  display: flex;
+  justify-content: space-around;
+  padding: $padding-section;
+  align-items: flex-end;
+}
+
+main {
+  height: 580px;
+  align-items: flex-start;
+  // height: 100%;
+
+  div.bck {
+    background-color: $primary;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  figure:nth-child(odd) {
+    align-self: flex-end;
+  }
+}
+
+aside {
+  align-content: center;
+  gap: 3rem;
+  align-items: flex-start;
+  > div {
+    flex-basis: 50%;
+    flex-grow: 1;
+    &:nth-child(1n + 2) {
+      flex-basis: 25%;
+      flex-grow: 1;
+    }
+  }
+}

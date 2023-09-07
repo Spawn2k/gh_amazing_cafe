@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "sass": "sass assets/sass/main.scss:assets/css/main.css -w --style=expanded",
+    "sass": "sass assets/scss/main.scss:assets/css/main.css -w --style=expanded",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -1,0 +1,13 @@
+h {
+  &1, &2, &3 ,&4 ,&5 ,&6 {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  &3 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $primary;
+    border-bottom: 2px dotted $primary;
+    padding-bottom: .8rem;
+    margin-bottom: 2rem;
+  }  
+}
